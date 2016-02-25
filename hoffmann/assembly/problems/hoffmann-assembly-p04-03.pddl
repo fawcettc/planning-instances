@@ -1,0 +1,18 @@
+(define (problem assembly-d2-m4-n1-h50-a75-r40-t20-o75)
+   (:domain assembly)
+   (:objects r0 - resource
+             a-0-0 a-1-0 a-1-1 a-1-2 - assembly)
+(:init
+(part-of a-1-0 a-0-0)
+(part-of a-1-1 a-0-0)
+(part-of a-1-2 a-0-0)
+(assemble-order a-1-0 a-1-1 a-0-0)
+(assemble-order a-1-0 a-1-2 a-0-0)
+(requires a-0-0 r0)
+(available a-1-0)
+(available a-1-1)
+(available a-1-2)
+(available r0)
+)
+(:goal (complete a-0-0))
+)
