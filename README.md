@@ -5,9 +5,9 @@ in one repository, with somewhat-consistent naming and uniqueness guarantees.
 
 This project primarily contains instances sourced from:
 
- * Previous iterations of the International Planning Competition, or [IPC](http://www.icaps-conference.org/index.php/Main/Competitions)
- * [The Fast Downward planning system instance repository](http://www.fast-downward.org)
- * [Joerg Hoffmann's FF domain collection](https://fai.cs.uni-saarland.de/hoffmann/ff-domains.html)
+ * Previous iterations of the [International Planning Competition](http://www.icaps-conference.org/index.php/Main/Competitions)
+ * The [Fast Downward planning system](http://www.fast-downward.org) benchmark repository
+ * Joerg Hoffmann's [FF domain collection](https://fai.cs.uni-saarland.de/hoffmann/ff-domains.html)
 
 ### Organization
 
