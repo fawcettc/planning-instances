@@ -1,0 +1,13 @@
+./external-assets/problem-instances/planning-instances/sodor/problems/sodor-prob01.pddl ./external-assets/problem-instances/planning-instances/sodor/sodor.pddl
+./external-assets/problem-instances/planning-instances/sodor/problems/sodor-prob02.pddl ./external-assets/problem-instances/planning-instances/sodor/sodor.pddl
+./external-assets/problem-instances/planning-instances/sodor/problems/sodor-prob03.pddl ./external-assets/problem-instances/planning-instances/sodor/sodor.pddl
+./external-assets/problem-instances/planning-instances/sodor/problems/sodor-prob04.pddl ./external-assets/problem-instances/planning-instances/sodor/sodor.pddl
+./external-assets/problem-instances/planning-instances/sodor/problems/sodor-prob05.pddl ./external-assets/problem-instances/planning-instances/sodor/sodor.pddl
+./external-assets/problem-instances/planning-instances/sodor/problems/sodor-prob06.pddl ./external-assets/problem-instances/planning-instances/sodor/sodor.pddl
+./external-assets/problem-instances/planning-instances/sodor/problems/sodor-prob07.pddl ./external-assets/problem-instances/planning-instances/sodor/sodor.pddl
+./external-assets/problem-instances/planning-instances/sodor/problems/sodor-prob08.pddl ./external-assets/problem-instances/planning-instances/sodor/sodor.pddl
+./external-assets/problem-instances/planning-instances/sodor/problems/sodor-prob09.pddl ./external-assets/problem-instances/planning-instances/sodor/sodor.pddl
+./external-assets/problem-instances/planning-instances/sodor/problems/sodor-prob10.pddl ./external-assets/problem-instances/planning-instances/sodor/sodor.pddl
+./external-assets/problem-instances/planning-instances/sodor/problems/sodor-prob11.pddl ./external-assets/problem-instances/planning-instances/sodor/sodor.pddl
+./external-assets/problem-instances/planning-instances/sodor/problems/sodor-prob12.pddl ./external-assets/problem-instances/planning-instances/sodor/sodor.pddl
+./external-assets/problem-instances/planning-instances/sodor/problems/sodor-prob13.pddl ./external-assets/problem-instances/planning-instances/sodor/sodor.pddl
