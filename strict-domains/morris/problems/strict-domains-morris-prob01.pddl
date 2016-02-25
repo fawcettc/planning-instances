@@ -1,0 +1,6 @@
+(define (problem morris-robot1)
+    (:domain morris)
+  (:objects A)
+  (:init (at A) (charged) (hole))
+  (:goal (and (charged) (not (hole))))
+  )
