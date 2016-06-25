@@ -13,6 +13,7 @@
 ./external-assets/problem-instances/planning-instances/ipc-2006-deterministic
 ./external-assets/problem-instances/planning-instances/ipc-2004-deterministic
 ./external-assets/problem-instances/planning-instances/ipc-2002-deterministic
+./external-assets/problem-instances/planning-instances/ipc-2016-unsolvability
 ./external-assets/problem-instances/planning-instances/hoffmann
 ./external-assets/problem-instances/planning-instances/aips-2000
 ./external-assets/problem-instances/planning-instances/aips-1998
