@@ -16,7 +16,6 @@
     (person p3)
     (person p4)
     (person p5)
-
     (location loc-0-0)
     (location loc-0-1)
     (location loc-0-2)
@@ -50,7 +49,6 @@
     (location loc-5-3)
     (location loc-5-4)
     (location loc-5-5)
-
     (active loc-1-0)
     (active loc-1-1)
     (active loc-1-2)
@@ -78,7 +76,6 @@
     (active loc-5-3)
     (active loc-5-4)
     (active loc-5-5)
-
     (connected loc-0-0 loc-1-0)
     (connected loc-0-1 loc-1-1)
     (connected loc-0-2 loc-1-2)
@@ -181,7 +178,6 @@
     (connected loc-5-3 loc-5-2)
     (connected loc-5-4 loc-5-3)
     (connected loc-5-5 loc-5-4)
-
     (person-at p0 loc-0-0)
     (person-at p1 loc-0-1)
     (person-at p2 loc-0-2)

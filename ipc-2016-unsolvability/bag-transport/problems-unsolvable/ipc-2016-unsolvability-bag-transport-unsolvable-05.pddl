@@ -139,9 +139,9 @@ city-1-loc-1 city-2-loc-1 city-3-loc-1 city-1-loc-2 city-2-loc-2 city-3-loc-2 ci
 (package-lte-sum pnum1 pnum0 pnum1)
 )
 (:goal (and
-	  (count-package package-bag1 city-2-loc-3 pnum3)
-	  (count-package package-bag2 city-2-loc-1 pnum1)
-	  (count-package package-bag3 city-2-loc-4 pnum1))
+      (count-package package-bag1 city-2-loc-3 pnum3)
+      (count-package package-bag2 city-2-loc-1 pnum1)
+      (count-package package-bag3 city-2-loc-4 pnum1))
 )
 (:metric minimize (total-cost))
 )

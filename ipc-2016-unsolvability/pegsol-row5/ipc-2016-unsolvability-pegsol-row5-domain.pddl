@@ -1,5 +1,4 @@
 ;; Peg Solitaire invasion domain
-
 (define (domain pegsolitaire-invasion)
     (:requirements :typing)
     (:types location - object)
@@ -8,7 +7,6 @@
         (occupied ?l - location)
         (free ?l - location)
     )
-
     (:action jump
      :parameters (?from - location ?over - location ?to - location)
      :precondition (and

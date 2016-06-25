@@ -1,13 +1,11 @@
 (define (problem transport-l14-t1-p14---int100n150-m25---int100c99---s131026---e0)
 (:domain transport-strips)
-
 (:objects
 l0 l1 l2 l3 l4 l5 l6 l7 l8 l9 l10 l11 l12 l13 - location
 t0 - truck
 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 - package
 level0 level1 level2 level3 level4 level5 level6 level7 level8 level9 level10 level11 level12 level13 level14 level15 level16 level17 level18 level19 level20 level21 level22 level23 level24 level25 level26 level27 level28 level29 level30 level31 level32 level33 level34 level35 level36 level37 level38 level39 level40 level41 level42 level43 level44 level45 level46 level47 level48 level49 level50 level51 level52 level53 level54 level55 level56 level57 level58 level59 level60 level61 level62 level63 level64 level65 level66 level67 level68 level69 level70 level71 level72 level73 level74 level75 level76 level77 level78 level79 level80 level81 level82 level83 level84 level85 level86 level87 level88 level89 level90 level91 level92 level93 level94 level95 level96 level97 level98 level99 level100 level101 level102 level103 level104 level105 level106 level107 level108 level109 level110 level111 level112 level113 level114 level115 level116 level117 level118 level119 level120 level121 level122 level123 level124 level125 level126 level127 level128 level129 level130 level131 level132 level133 level134 level135 level136 level137 level138 level139 level140 level141 level142 level143 level144 level145 level146 level147 level148 level149 level150 level151 level152 level153 level154 level155 level156 level157 level158 level159 level160 level161 level162 level163 level164 level165 level166 level167 level168 level169 level170 level171 level172 level173 level174 level175 level176 level177 level178 - fuellevel
 )
-
 (:init
 (sum level0 level0 level0)
 (sum level0 level1 level1)
@@ -16119,7 +16117,6 @@ level0 level1 level2 level3 level4 level5 level6 level7 level8 level9 level10 le
 (sum level177 level0 level177)
 (sum level177 level1 level178)
 (sum level178 level0 level178)
-
 (connected l0 l6)
 (fuelcost level4 l0 l6)
 (connected l0 l7)
@@ -16204,10 +16201,8 @@ level0 level1 level2 level3 level4 level5 level6 level7 level8 level9 level10 le
 (fuelcost level14 l13 l6)
 (connected l13 l11)
 (fuelcost level21 l13 l11)
-
 (at t0 l11)
 (fuel t0 level178)
-
 (at p0 l4)
 (at p1 l12)
 (at p2 l1)
@@ -16223,7 +16218,6 @@ level0 level1 level2 level3 level4 level5 level6 level7 level8 level9 level10 le
 (at p12 l7)
 (at p13 l6)
 )
-
 (:goal
 (and
 (at p0 l12)

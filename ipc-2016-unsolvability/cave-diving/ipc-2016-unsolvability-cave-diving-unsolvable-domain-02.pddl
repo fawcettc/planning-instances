@@ -2,7 +2,6 @@
 ;; Authors: Nathan Robinson,
 ;;          Christian Muise, and
 ;;          Charles Gretton
-
 (define (domain cave-diving-strips)
   (:requirements :typing)
   (:types location diver tank quantity)
@@ -23,11 +22,9 @@
     (have-photo ?l - location)
     (in-water )
   )
-
   (:constants
     d0 d1 - diver
   )
-
   (:action hire-diver-d0
     :parameters ( )
     :precondition (and (available d0))
@@ -35,7 +32,6 @@
                  (not (available d0))
             )
   )
-
   (:action hire-diver-d1
     :parameters ( )
     :precondition (and (available d1))
@@ -43,7 +39,6 @@
                  (not (available d1))
             )
   )
-
   (:action prepare-tank
     :parameters (?d - diver ?t1 ?t2 - tank ?q1 ?q2 - quantity)
     :precondition (and (at-surface ?d)
@@ -60,7 +55,6 @@
                       (holding ?d ?t1)
             )
   )
-
   (:action enter-water
     :parameters (?d - diver ?l - location)
     :precondition (and (at-surface ?d)
@@ -70,7 +64,6 @@
                       (at-diver ?d ?l)
             )
   )
-
   (:action pickup-tank
     :parameters (?d - diver ?t - tank ?l - location ?q1 ?q2 - quantity)
     :precondition (and (at-diver ?d ?l)
@@ -84,7 +77,6 @@
                       (capacity ?d ?q1)
             )
   )
-
   (:action drop-tank
     :parameters (?d - diver ?t - tank ?l - location ?q1 ?q2 - quantity)
     :precondition (and (at-diver ?d ?l)
@@ -98,7 +90,6 @@
                       (capacity ?d ?q2)
             )
   )
-
   (:action swim
     :parameters (?d - diver ?t - tank ?l1 ?l2 - location)
     :precondition (and (at-diver ?d ?l1)
@@ -111,7 +102,6 @@
                       (at-diver ?d ?l2)
             )
   )
-
   (:action photograph
     :parameters (?d - diver ?l - location ?t - tank)
     :precondition (and (at-diver ?d ?l)
@@ -122,7 +112,6 @@
                       (have-photo ?l)
             )
   )
-
   (:action decompress
     :parameters (?d - diver ?l - location)
     :precondition (and (at-diver ?d ?l)
@@ -133,5 +122,4 @@
                  (not (in-water))
             )
   )
-
 )

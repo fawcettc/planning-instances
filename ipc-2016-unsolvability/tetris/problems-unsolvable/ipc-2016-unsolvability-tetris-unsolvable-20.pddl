@@ -1,13 +1,13 @@
 (define (problem Tetris-8-4-2653357)
 (:domain tetris)
-(:objects  
-f0-0f f0-1f f0-2f f0-3f 
-f1-0f f1-1f f1-2f f1-3f 
-f2-0f f2-1f f2-2f f2-3f 
-f3-0f f3-1f f3-2f f3-3f 
-f4-0f f4-1f f4-2f f4-3f 
-f5-0f f5-1f f5-2f f5-3f 
-f6-0f f6-1f f6-2f f6-3f 
+(:objects
+f0-0f f0-1f f0-2f f0-3f
+f1-0f f1-1f f1-2f f1-3f
+f2-0f f2-1f f2-2f f2-3f
+f3-0f f3-1f f3-2f f3-3f
+f4-0f f4-1f f4-2f f4-3f
+f5-0f f5-1f f5-2f f5-3f
+f6-0f f6-1f f6-2f f6-3f
 f7-0f f7-1f f7-2f f7-3f - position
 square0 square1 square2 - one_square
 straight0 straight1 straight2 - two_straight
@@ -164,20 +164,20 @@ rightl0 rightl1 rightl2 - right_l
 )
 )
 ;; DESCRIPTION OF THE INITIAL STATE
-;; 0   **  **  ##  ** 
-;; 1   **  **  ##  ## 
-;; 2   ##  **  ##  ## 
-;; 3   ##  ##  ##  ## 
-;; 4   **  **  ##  ** 
-;; 5   **  ##  ##  ** 
-;; 6   **  ##  ##  ** 
-;; 7   **  ##  ##  ## 
+;; 0   **  **  ##  **
+;; 1   **  **  ##  ##
+;; 2   ##  **  ##  ##
+;; 3   ##  ##  ##  ##
+;; 4   **  **  ##  **
+;; 5   **  ##  ##  **
+;; 6   **  ##  ##  **
+;; 7   **  ##  ##  ##
 ;; **BETTER** DESCRIPTION OF THE INITIAL STATE
-;; 0   **  **  R2  ** 
-;; 1   **  **  R2  R2 
-;; 2   R0  **  R1  S1 
-;; 3   R0  R0  R1  R1 
-;; 4   **  **  S0  ** 
-;; 5   **  L0  L1  ** 
-;; 6   **  L0  L1  ** 
-;; 7   **  S2  L2  L2 
+;; 0   **  **  R2  **
+;; 1   **  **  R2  R2
+;; 2   R0  **  R1  S1
+;; 3   R0  R0  R1  R1
+;; 4   **  **  S0  **
+;; 5   **  L0  L1  **
+;; 6   **  L0  L1  **
+;; 7   **  S2  L2  L2

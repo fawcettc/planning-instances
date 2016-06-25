@@ -12,56 +12,52 @@
 )
 (:functions   (road-length ?l1 - location ?l2 - location) - number  (total-cost ) - number)
 (:action drive
-	:parameters (?v - vehicle ?l1 - location ?l2 - location)
-	:precondition (and
-	  (at-vehicle ?v ?l1)
-	  (road ?l1 ?l2))
-
-	:effect (and
-	  (not (at-vehicle ?v ?l1))
-	  (at-vehicle ?v ?l2)
+    :parameters (?v - vehicle ?l1 - location ?l2 - location)
+    :precondition (and
+      (at-vehicle ?v ?l1)
+      (road ?l1 ?l2))
+    :effect (and
+      (not (at-vehicle ?v ?l1))
+      (at-vehicle ?v ?l2)
 (increase (total-cost ) (road-length ?l1 ?l2))))
 (:action pick-up
-	:parameters (?v - vehicle ?l - location ?p - package ?s1 - capacity-number ?s2 - capacity-number ?n1 - pnum ?n0 - pnum ?n2 - pnum ?n3 - pnum ?p-size - pnum)
-	:precondition (and
-	  (count-package ?p ?l ?n1)
-	  (package-less ?n0 ?n1)
-	  (count-package ?p ?v ?n2)
-	  (package-less ?n2 ?n3)
-	  (at-vehicle ?v ?l)
-	  (capacity-predecessor ?s1 ?s2)
-	  (capacity ?v ?s2)
-	  (package-lte-sum ?n1 ?n2 ?p-size)
-	  (package-bag-size ?p ?p-size))
-
-	:effect (and
-	  (count-package ?p ?l ?n0)
-	  (not (count-package ?p ?l ?n1))
-	  (count-package ?p ?v ?n3)
-	  (not (count-package ?p ?v ?n2))
-	  (capacity ?v ?s1)
-	  (not (capacity ?v ?s2))
+    :parameters (?v - vehicle ?l - location ?p - package ?s1 - capacity-number ?s2 - capacity-number ?n1 - pnum ?n0 - pnum ?n2 - pnum ?n3 - pnum ?p-size - pnum)
+    :precondition (and
+      (count-package ?p ?l ?n1)
+      (package-less ?n0 ?n1)
+      (count-package ?p ?v ?n2)
+      (package-less ?n2 ?n3)
+      (at-vehicle ?v ?l)
+      (capacity-predecessor ?s1 ?s2)
+      (capacity ?v ?s2)
+      (package-lte-sum ?n1 ?n2 ?p-size)
+      (package-bag-size ?p ?p-size))
+    :effect (and
+      (count-package ?p ?l ?n0)
+      (not (count-package ?p ?l ?n1))
+      (count-package ?p ?v ?n3)
+      (not (count-package ?p ?v ?n2))
+      (capacity ?v ?s1)
+      (not (capacity ?v ?s2))
 (increase (total-cost ) 1)))
 (:action drop
-	:parameters (?v - vehicle ?l - location ?p - package ?s1 - capacity-number ?s2 - capacity-number ?n1 - pnum ?n0 - pnum ?n2 - pnum ?n3 - pnum ?p-size - pnum)
-	:precondition (and
-	  (count-package ?p ?v ?n1)
-	  (package-less ?n0 ?n1)
-	  (count-package ?p ?l ?n2)
-	  (package-less ?n2 ?n3)
-	  (at-vehicle ?v ?l)
-	  (capacity-predecessor ?s1 ?s2)
-	  (capacity ?v ?s1)
-	  (package-lte-sum ?n1 ?n2 ?p-size)
-	  (package-bag-size ?p ?p-size))
-
-	:effect (and
-	  (count-package ?p ?v ?n0)
-	  (not (count-package ?p ?v ?n1))
-	  (count-package ?p ?l ?n3)
-	  (not (count-package ?p ?l ?n2))
-	  (capacity ?v ?s2)
-	  (not (capacity ?v ?s1))
+    :parameters (?v - vehicle ?l - location ?p - package ?s1 - capacity-number ?s2 - capacity-number ?n1 - pnum ?n0 - pnum ?n2 - pnum ?n3 - pnum ?p-size - pnum)
+    :precondition (and
+      (count-package ?p ?v ?n1)
+      (package-less ?n0 ?n1)
+      (count-package ?p ?l ?n2)
+      (package-less ?n2 ?n3)
+      (at-vehicle ?v ?l)
+      (capacity-predecessor ?s1 ?s2)
+      (capacity ?v ?s1)
+      (package-lte-sum ?n1 ?n2 ?p-size)
+      (package-bag-size ?p ?p-size))
+    :effect (and
+      (count-package ?p ?v ?n0)
+      (not (count-package ?p ?v ?n1))
+      (count-package ?p ?l ?n3)
+      (not (count-package ?p ?l ?n2))
+      (capacity ?v ?s2)
+      (not (capacity ?v ?s1))
 (increase (total-cost ) 1)))
 )
-

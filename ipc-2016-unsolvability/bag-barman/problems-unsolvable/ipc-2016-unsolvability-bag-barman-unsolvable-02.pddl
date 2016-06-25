@@ -177,9 +177,9 @@
 (shot-lte-sum snum4 snum0 snum4)
 )
 (:goal (and
-	  (count-shot-goal-satisfied shot-bag1 cocktail2)
-	  (count-shot-goal-satisfied shot-bag1 cocktail1)
-	  (count-shot-goal-satisfied shot-bag1 cocktail3))
+      (count-shot-goal-satisfied shot-bag1 cocktail2)
+      (count-shot-goal-satisfied shot-bag1 cocktail1)
+      (count-shot-goal-satisfied shot-bag1 cocktail3))
 )
 (:metric minimize (total-cost))
 )

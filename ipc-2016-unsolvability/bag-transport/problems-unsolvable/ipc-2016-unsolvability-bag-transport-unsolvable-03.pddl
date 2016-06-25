@@ -91,9 +91,9 @@ capacity-0 capacity-1 capacity-2 capacity-3 capacity-4  - capacity-number
 (package-lte-sum pnum1 pnum0 pnum1)
 )
 (:goal (and
-	  (count-package package-bag1 city-2-loc-2 pnum1)
-	  (count-package package-bag1 city-2-loc-3 pnum1)
-	  (count-package package-bag2 city-2-loc-1 pnum1))
+      (count-package package-bag1 city-2-loc-2 pnum1)
+      (count-package package-bag1 city-2-loc-3 pnum1)
+      (count-package package-bag2 city-2-loc-1 pnum1))
 )
 (:metric minimize (total-cost))
 )

@@ -1,13 +1,11 @@
 (define (problem transport-l10-t1-p10---int100n150-m25---int100c99---s131026---e0)
 (:domain transport-strips)
-
 (:objects
 l0 l1 l2 l3 l4 l5 l6 l7 l8 l9 - location
 t0 - truck
 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 - package
 level0 level1 level2 level3 level4 level5 level6 level7 level8 level9 level10 level11 level12 level13 level14 level15 level16 level17 level18 level19 level20 level21 level22 level23 level24 level25 level26 level27 level28 level29 level30 level31 level32 level33 level34 level35 level36 level37 level38 level39 level40 level41 level42 level43 level44 level45 level46 level47 level48 level49 level50 level51 level52 level53 level54 level55 level56 level57 level58 level59 level60 level61 level62 level63 level64 level65 level66 level67 level68 level69 level70 level71 level72 level73 level74 level75 level76 level77 level78 level79 level80 level81 level82 level83 level84 level85 level86 level87 level88 level89 level90 level91 level92 level93 level94 - fuellevel
 )
-
 (:init
 (sum level0 level0 level0)
 (sum level0 level1 level1)
@@ -4569,7 +4567,6 @@ level0 level1 level2 level3 level4 level5 level6 level7 level8 level9 level10 le
 (sum level93 level0 level93)
 (sum level93 level1 level94)
 (sum level94 level0 level94)
-
 (connected l0 l2)
 (fuelcost level22 l0 l2)
 (connected l0 l3)
@@ -4630,10 +4627,8 @@ level0 level1 level2 level3 level4 level5 level6 level7 level8 level9 level10 le
 (fuelcost level11 l9 l2)
 (connected l9 l4)
 (fuelcost level12 l9 l4)
-
 (at t0 l5)
 (fuel t0 level94)
-
 (at p0 l6)
 (at p1 l7)
 (at p2 l8)
@@ -4645,7 +4640,6 @@ level0 level1 level2 level3 level4 level5 level6 level7 level8 level9 level10 le
 (at p8 l7)
 (at p9 l8)
 )
-
 (:goal
 (and
 (at p0 l0)

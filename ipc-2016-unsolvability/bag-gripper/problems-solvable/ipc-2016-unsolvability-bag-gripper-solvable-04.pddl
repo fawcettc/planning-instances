@@ -8351,9 +8351,9 @@ gripper-bag1  - gripper
 (gripper-lte-sum gnum4 gnum0 gnum4)
 )
 (:goal (and
-	  (count-ball ball-bag1 roomb bnum100)
-	  (count-ball ball-bag1 roome bnum15)
-	  (count-ball ball-bag2 roomc bnum50)
-	  (count-ball ball-bag3 roome bnum10))
+      (count-ball ball-bag1 roomb bnum100)
+      (count-ball ball-bag1 roome bnum15)
+      (count-ball ball-bag2 roomc bnum50)
+      (count-ball ball-bag3 roome bnum10))
 )
 )

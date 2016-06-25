@@ -1,5 +1,4 @@
 ;; Peg Solitaire domain
-
 (define (domain pegsolitaire-netbenefit)
     (:requirements :typing )
     (:types location - object)
@@ -8,10 +7,9 @@
         (occupied ?l - location)
         (free ?l - location)
     )
-
     (:action jump
      :parameters (?from - location ?over - location ?to - location)
-     :precondition (and 
+     :precondition (and
                        (IN-LINE ?from ?over ?to)
                        (occupied ?from)
                        (occupied ?over)

@@ -15778,6 +15778,6 @@ bnum1 bnum2 bnum3 bnum4 bnum5 bnum6 bnum7 bnum8 bnum9 bnum10 bnum11 bnum12 bnum1
 (gripper-lte-sum gnum2 gnum0 gnum2)
 )
 (:goal (and
-	  (count-ball ball-bag1 roomb bnum175))
+      (count-ball ball-bag1 roomb bnum175))
 )
 )

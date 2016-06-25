@@ -8215,7 +8215,7 @@ rooma roomb roomc roomd roome roomf  - room
 (gripper-lte-sum gnum2 gnum0 gnum2)
 )
 (:goal (and
-	  (count-ball ball-bag1 roomb bnum100)
-	  (count-ball ball-bag2 roomc bnum75))
+      (count-ball ball-bag1 roomb bnum100)
+      (count-ball ball-bag2 roomc bnum75))
 )
 )

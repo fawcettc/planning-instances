@@ -2,7 +2,6 @@
 ;; Authors: Nathan Robinson,
 ;;          Christian Muise, and
 ;;          Charles Gretton
-
 (define (problem cave-diving-strips-prob16)
   (:domain cave-diving-strips)
   (:objects
@@ -12,7 +11,6 @@
     t40 t41 t42 t43 t44 t45 dummy - tank
     zero one two three four - quantity
   )
-
   (:init
     (available d0)
     (available d1)
@@ -103,7 +101,6 @@
     (next-quantity two three)
     (next-quantity three four)
   )
-
   (:goal
     (and
       (have-photo l5)
@@ -123,5 +120,4 @@
       (decompressing d6)
     )
   )
-
 )

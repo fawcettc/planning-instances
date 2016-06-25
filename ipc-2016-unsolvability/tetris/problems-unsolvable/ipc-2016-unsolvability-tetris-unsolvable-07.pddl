@@ -1,11 +1,11 @@
 (define (problem Tetris-6-4-5107225)
 (:domain tetris)
-(:objects  
-f0-0f f0-1f f0-2f f0-3f 
-f1-0f f1-1f f1-2f f1-3f 
-f2-0f f2-1f f2-2f f2-3f 
-f3-0f f3-1f f3-2f f3-3f 
-f4-0f f4-1f f4-2f f4-3f 
+(:objects
+f0-0f f0-1f f0-2f f0-3f
+f1-0f f1-1f f1-2f f1-3f
+f2-0f f2-1f f2-2f f2-3f
+f3-0f f3-1f f3-2f f3-3f
+f4-0f f4-1f f4-2f f4-3f
 f5-0f f5-1f f5-2f f5-3f - position
 square0 square1 - one_square
 straight0 straight1 - two_straight
@@ -131,9 +131,9 @@ rightl0 - right_l
 )
 )
 ;; DESCRIPTION OF THE INITIAL STATE
-;; 0   **  **  **  ## 
-;; 1   **  ##  ##  ## 
-;; 2   **  ##  ##  ** 
-;; 3   **  **  **  ** 
-;; 4   **  **  ##  ## 
-;; 5   **  **  **  ## 
+;; 0   **  **  **  ##
+;; 1   **  ##  ##  ##
+;; 2   **  ##  ##  **
+;; 3   **  **  **  **
+;; 4   **  **  ##  ##
+;; 5   **  **  **  ##

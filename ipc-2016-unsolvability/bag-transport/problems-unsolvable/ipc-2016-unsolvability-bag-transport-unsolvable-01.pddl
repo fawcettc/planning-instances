@@ -105,9 +105,9 @@ package-bag1 package-bag2 package-bag3  - package
 (package-lte-sum pnum1 pnum0 pnum1)
 )
 (:goal (and
-	  (count-package package-bag1 city-1-loc-3 pnum2)
-	  (count-package package-bag2 city-1-loc-1 pnum1)
-	  (count-package package-bag3 city-2-loc-2 pnum1))
+      (count-package package-bag1 city-1-loc-3 pnum2)
+      (count-package package-bag2 city-1-loc-1 pnum1)
+      (count-package package-bag3 city-2-loc-2 pnum1))
 )
 (:metric minimize (total-cost))
 )

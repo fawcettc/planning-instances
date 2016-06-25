@@ -146,9 +146,9 @@ truck-1 truck-2  - vehicle
 (package-lte-sum pnum1 pnum0 pnum1)
 )
 (:goal (and
-	  (count-package package-bag1 city-2-loc-5 pnum2)
-	  (count-package package-bag2 city-2-loc-1 pnum1)
-	  (count-package package-bag3 city-2-loc-3 pnum1))
+      (count-package package-bag1 city-2-loc-5 pnum2)
+      (count-package package-bag2 city-2-loc-1 pnum1)
+      (count-package package-bag3 city-2-loc-3 pnum1))
 )
 (:metric minimize (total-cost))
 )

@@ -1,14 +1,12 @@
 (define (domain transport-strips)
 (:requirements :typing :action-costs)
-
-(:types 
-package 
-truck - object 
+(:types
+package
+truck - object
 location
 fuellevel
 )
-
-(:predicates 
+(:predicates
 (connected ?l1 ?l2 - location)
 (at ?o - object ?l - location)
 (in ?p - package ?t - truck)
@@ -16,10 +14,8 @@ fuellevel
 (fuelcost ?level - fuellevel ?l1 ?l2 - location)
 (sum ?a ?b ?c - fuellevel)
 )
-
-(:functions 
+(:functions
 (total-cost) - number)
-
 (:action LOAD
 :parameters
 (?p - package
@@ -30,7 +26,6 @@ fuellevel
 :effect
 (and (not (at ?p ?l)) (in ?p ?t) (increase (total-cost) 1))
 )
-
 (:action UNLOAD
 :parameters
 (?p - package
@@ -41,7 +36,6 @@ fuellevel
 :effect
 (and (at ?p ?l) (not (in ?p ?t)) (increase (total-cost) 1))
 )
-
 (:action DRIVE
 :parameters
 (?t - truck
@@ -51,7 +45,7 @@ fuellevel
 ?fueldelta - fuellevel
 ?fuelpre - fuellevel)
 :precondition
-(and 
+(and
 (connected ?l1 ?l2)
 (fuelcost ?fueldelta ?l1 ?l2)
 (fuel ?t ?fuelpre)
@@ -59,13 +53,10 @@ fuellevel
 (at ?t ?l1)
 )
 :effect
-(and (not (at ?t ?l1)) 
-     (at ?t ?l2) 
-     (not (fuel ?t ?fuelpre)) 
+(and (not (at ?t ?l1))
+     (at ?t ?l2)
+     (not (fuel ?t ?fuelpre))
      (fuel ?t ?fuelpost)
      (increase (total-cost) 1))
 )
-
 )
-
-

@@ -1,5 +1,4 @@
 ;; Pebbling the chessboard domain
-
 (define (domain pebbling)
     (:requirements :typing)
     (:types location - object)
@@ -9,7 +8,6 @@
         (occupied ?l - location)
         (free ?l - location)
     )
-
     (:action move
      :parameters (?from - location ?xsucc - location ?ysucc - location)
      :precondition (and

@@ -177,9 +177,9 @@
 (hand-lte-sum hnum2 hnum0 hnum2)
 )
 (:goal (and
-	  (count-shot-goal-satisfied shot-bag1 cocktail3)
-	  (count-shot-goal-satisfied shot-bag1 cocktail1)
-	  (count-shot-goal-satisfied shot-bag1 cocktail2))
+      (count-shot-goal-satisfied shot-bag1 cocktail3)
+      (count-shot-goal-satisfied shot-bag1 cocktail1)
+      (count-shot-goal-satisfied shot-bag1 cocktail2))
 )
 (:metric minimize (total-cost))
 )
